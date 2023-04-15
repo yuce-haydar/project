@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    max-width: 1366px;
+}
+
+.banner {
+    width: 100%;
+    /*bir üsteki divin tammamını alcak*/
+    height: 100vh;
+    background: url("/images/bokeh_car_lights_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    align-self: flex-start;
+
+}
+
+header h1 {
+    position: absolute;
+    color: red;
+    font-size: 2.2em;
+    top: 20px;
+    margin-left: 30px;
+    float: left;
+
+}
+
+header nav ul {
+    position: absolute;
+    float: right;
+    right: 20px;
+    top: 0;
+
+}
+
+header nav ul li {
+    display: block;
+    /*kutu özelliği veriyoruz*/
+    padding: 20px;
+    float: left;
+}
+
+header nav ul li a {
+    background-color: rgb(1, 44, 44);
+    font-size: 1em;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+header nav ul li a:hover {
+    color: rgb(1, 44, 44);
+    background-color: white;
+}
+
+.yazi {
+    line-height: 3em;
+}
+
+.yazi .altbaslik {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.yazi .bolum1paragraf {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.yazi .butonbanner a {
+    margin-top: 15px;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5em;
+    background-color: rgb(0, 213, 255);
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.bolum1 {
+    width: 100%;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 100px 0;
+    justify-content: center;
+
+}
+
+.bolum1 h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.bolum1 p {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.bolum1 .container {
+
+    display: flex;
+    /*yatayda yan yana dizmemizi sagladi*/
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kutu {
+    width: 30%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: antiquewhite;
+}
+
+.kutu h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.kutu p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.kutu i {
+    font-size: 2em;
+    padding: 1em;
+    color: rgb(150, 81, 219);
+    border: 1px solid;
+    border-radius: 100%;
+    background-color: aqua;
+    margin: 15px 0;
+
+}
+
+/***********************bolum 2***********************/
+
+.bolum2 {
+    padding: 50px 0;
+    width: 100%;
+    border-top: 2px solid;
+    box-sizing: border-box;
+    /*içeri dogru*/
+    text-align: center;
+    display: block;
+}
+
+.bolum2 h3 {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.bolum2altbaslik {
+    font-size: 2em;
+    margin: 20px 0;
+    font-weight: 100;
+}
+
+.kisiler {
+
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin: 0px 150px;
+}
+
+.kisi {
+    flex-basis: 200px;
+    margin: 30px;
+    text-align: left;
+    flex-grow: 1;
+    /*yeterli alan varsa genişleyebilmeleri iççin flex grow */
+}
+
+.kisi img {
+    float: left;
+    /*resmimiz solda yazılar falan sagda oldurduk bununla*/
+    width: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+.kisi h4 {
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.kisi p {
+    margin-top: 5px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.bolum2 .altparagraf {
+    width: 70%;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 50px auto;
+}
+
+.bolum2 .buton a {
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.bolum2 .buton a:hover {
+    background-color: black;
+    color: white;
+}
+
+/*************************************************bolum3*/
+.bolum3 {
+    width: 100%;
+    background-color: aqua;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.bolum3 h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bolum3 p {
+    font-size: 1.5em;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
+
+.bolum3 .container form {
+    width: 600px;
+    margin: 70px auto;
+}
+
+.bolum3 .container form input[type=text] {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin: 3px 10px;
+    color: #444;
+    font-size: 1em;
+}
+
+.bolum3 .container form input[type=email] {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin: 3px 10px;
+    color: #444;
+    font-size: 1em;
+}
+
+.bolum3 .container form textarea {
+    width: 450px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    color: #444;
+    font-size: 1em;
+    margin: 3px 10px;
+}
+
+.bolum3 .container form input[type=button] {
+
+    display: block;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    color: #ffffff;
+    background-color: #003f75;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 3px auto;
+}
+
+footer {
+    background-color: rgb(68, 69, 65);
+
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+footer .icerik {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+footer .icerik .footerkutu {
+    text-align: center;
+    line-height: 40px;
+    padding: 50px 30px;
+    justify-content: start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+
+}
+
+footer .icerik .footerkutu p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+footer .icerik .footerkutu a {
+    text-decoration: none;
+    color: #fef0f0;
+}
+
+footer .sosyal {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0px;
+}
+
+footer .sosyal p {
+    display: flex;
+    justify-content: start;
+    font-size: 2em;
+    width: 70%;
+
+}
+
+footer .sosyal i {
+
+
+    font-size: 2em;
+    color: #5ab2ff;
+}
+
+
+@media screen and (max-width:980px) {
+
+    .banner {
+        height: 70vh;
+    }
+
+    .yazi .altbaslik {
+        font-size: 2em;
+    }
+
+    .yazi .bolum1paragraf {
+        font-size: 1em;
+    }
+
+    .yazi .butonbanner a {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    .bolum1 h2 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .bolum1 p {
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    header nav ul {
+        display: flex;
+     flex-direction: column;
+     text-align: end;
+        
+    }
+    header nav ul li{
+        padding: 5px 0;
+    }
+    header nav ul li a{
+        padding: 5px 10px;
+   
+    }
+
+    .banner {
+        height: 50vh;
+    }
+
+    .yazi .altbaslik   {
+        font-size: 1em;
+    }
+    .yazi .altbaslik span  {
+        color: red;
+        font-size: 1.2em;
+        font: bold;
+    }
+
+    .yazi .bolum1paragraf {
+        font-size: 0.7em;
+    }
+
+    .yazi .butonbanner a {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    .bolum1 h2 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .bolum1 p {
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+
+    .kutu {
+        width: 100%;
+
+    }
+
+    .bolum2 h3 {
+        font-size: 1em;
+        margin: 20px 0;
+    }
+
+    .bolum2altbaslik {
+        font-size: 0.7em;
+        margin: 20px 0;
+        font-weight: 100;
+    }
+
+    .kisiler {
+        justify-content: center;
+    }
+
+    .bolum2 .altparagraf {
+        width: 70%;
+        text-align: start;
+
+    }
+
+    .bolum2 .buton a {
+        text-decoration: none;
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    .bolum3 {
+        width: 100%;
+        background-color: aqua;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .bolum3 h2 {
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .bolum3 p {
+        font-size: 0.7em;
+        margin: 50px 0;
+        text-transform: uppercase;
+    }
+
+    .bolum3 .container form {
+        width: 300px;
+        margin: 70px auto;
+    }
+
+
+    .bolum3 .container form textarea {
+        width: 200px;
+        height: 250px;
+        border-radius: 5px;
+        padding: 3px 10px;
+        color: #444;
+        font-size: 1em;
+        margin: 3px 10px;
+    }
+
+    footer .sosyal {
+
+        justify-content: center;
+
+    }
+
+    footer p {
+        text-align: center;
+        color: #f5f5f5;
+        font-size: 0.7em;
+
+
+    }
+
+    footer .sosyal i {
+
+        margin: 0 10px;
+
+
+    }
+
+
+
+
+}
